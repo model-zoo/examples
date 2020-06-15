@@ -16,7 +16,7 @@ Installation
 Install the Model Zoo client library via pip:
 
 ```python
-!pip install modelzoo-client
+!pip install modelzoo-client[tensorflow]
 ```
 
 
