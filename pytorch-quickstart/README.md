@@ -96,13 +96,14 @@ image_response = requests.get(
     "https://modelzoo-datasets.s3-us-west-2.amazonaws.com/imagenet/dog.jpg"
 )
 input_image = Image.open(BytesIO(image_response.content))
-input_image.show()
 
 class_to_labels = requests.get(
     "https://modelzoo-datasets.s3-us-west-2.amazonaws.com/imagenet/class_idx_to_labels.json"
 ).json()
 ```
 
+
+![](https://modelzoo-datasets.s3-us-west-2.amazonaws.com/imagenet/dog.jpg)
 
 Next, we'll use our Python client library to query the model for a
 prediction.
